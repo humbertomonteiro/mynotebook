@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS only -->   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6c34f0ed7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/stylepaginas.css">
+
+    <title>My Notebook - Primeiros Passos</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark nav-nav">
+
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../imagens/logo1.png" width="250">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a href="html.html" class="nav-link">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="css.html" class="nav-link">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bootstrap.html" class="nav-link">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript.html" class="nav-link">JavaScript</a>
+                        </li>
+                
+                    </ul>
+
+                    <form class="ml-3">
+                        <div class="input-group">
+                            <input type="text" placeholder="Pesquisar..." class="form-control">
+                            <div class="input-group-append">
+                                <button class="btn btn-nav">ok</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="">
+
+        <section class="branco">
+            <h1>Primeiros passos:</h1><hr>
+            <h2>Algumas formatações:</h2>
+            <h3>Títulos, paragrafos e algumas dicas:</h3>
+            <p>A tag <strong>&lt;h1&gt;</strong> é um título de grau 1, existem 6 niveis de títulos. Niveis de títulos tem
+                sua importância, não  se usa como forma de tamanho de texto, pois isso é feito no <strong>'CSS'</strong>
+                onde vamos fazer o design do site.  Então você não vai usar a tag <strong>&lt;h3&gt;</strong> porque
+                acha que o tamanho é melhor. São niveis para serem usados  como títulos e subtítulos e na hora de trabalhar
+                com seu arquivo, ser bem mais pratico e profissional.</p>
+            <p>A tag <strong>&lt;p&gt;</strong> cria um paragrafo.(São os paragrafos que você está lendo) Você pode
+                escrever o paragrafo de qualquer jeito, basta  colocar no meio do par de tags <strong>&lt;p&gt;
+                &lt;/p&gt;</strong>. </p>
+            <p>Se precisar querbrar o texto em algum lugar específico, você pode usar a tag &lt;br&gt;.</p>
+            <p>Para colocar o sinal de maior (&lt;) ou menor (&gt;) no HTML, basta colocar assim <strong>'& l t ;'</strong> (Tudo junto)
+                para  o maior e<strong>'& g t ;'</strong> (Tudo junto) para menor.</p>
+            <p>A tag <strong>&lt;hr&gt;</strong> cria uma linha horizontal.(Igual a linha acima)</p>
+            <p>A tag <strong>&lt;br&gt;</strong> quebra a linha do texto.(Pois se der enter não vai fazer nenhuma diferença no texto)</p>
+            <aside>
+                <h4>Dica: Envelopar</h4>
+                <p>Uma dica para deixar um texto entre tags é usando o envelopamento. Selecione o texto no seu  <strong>'Visual
+                    Studio Code'</strong>,em seguida no seu teclado aperte <strong>'ctrl' 'shift' 'p'</strong>, aparecerá uma caixa
+                    de pesquisa e lá você  busca <strong>'abb'</strong>. Vão aparecer algumas opções e você irá escolher a opção
+                    <strong>'Wrap with Abbreviation'</strong> em seguida vai buscar<strong> 'p' </strong> e dar enter. Agora toda vez que
+                    precisar colocar algum texto entre tags é só  selecionar o texto, usar esse atalho:<strong>'ctrl' 'shift'
+                    'p'</strong>, dar <strong>'enter'</strong>e escrever a tag desejada e dar <strong>'enter'</strong>   novamente.</p>
+            </aside>
+            <h2>Principais formatações de texto:</h2>
+            <h3>Como usar Negrito e Itálico do jeito certo:</h3>
+            <p><strong>Negrito</strong> se usa para dar destaque. Para fazer um texto ficar em negrito
+                temos a tag &lt;strong&gt;.
+                ex: <strong>Essa frase está entre tags &lt;strong&gt; &lt;/strong&gt;.</strong></p>
+            <p><em>Itálico</em> se usa para dar ênfase. Para fazer um texto ficar em Itálico tem a
+                tag &lt;em&gt;.
+                ex: <em>Essa frase está entre tags &lt;em&gt; &lt;/em&gt;.</em></p>
+            <h3>Texto marcado:</h3>
+            <p>Podemos criar também um texto marcado usando a tag <strong>&lt;mark&gt;</strong>. Aqui vai um exemplo:
+                <mark>Estou muito animado com minha evolução no HTML5.</mark></p>
+            <p>Essa marcação de texto vai ser na cor amarela. Para mudar usa 'CSS', dentro da tag mark voce vai digitar
+                style e escolhe o parâmetro background e a cor desejada.  Aqui vai um exemplo:</p>
+            <aside>
+                <h4>Dica: Celular de lado</h4>
+                <p>Se estiver usando o celular para navegar no site, você pode visualizar melhor o código com o 
+                    celular de lado.</p>
+                </aside>
+            <pre>&lt;mark style= "backgroud-color:lime;"&gt; &lt;/mark&gt;</pre>
+            <p>Mas como é questão de <strong>'style'</strong> a forma mais recomendada de fazer é com <strong>'CSS'</strong>,
+                pois se precisar   usar a marcação em outro texto vai ser precisó fazer a mesma edição em todos as tags
+                <strong>&lt;mark&gt;</strong></p>
+            <h3>Texto grande e texto pequeno:</h3>
+            <p>Estamos fazendo um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo. Usando a tag
+                <strong>&lt;big&gt;</strong> para   grande e a tag <strong>&lt;small&gt;</strong> para textos pequenos.</p>
+            <h3>Texto deletado:</h3>
+            <p>Podemos marcar um texto como excluído para indicar que ele deve ser lido, mas não considerado.   O texto
+                vai ficar riscado, usando a tag <strong>&lt;del&gt;</strong>.   <strong>Ex:</strong> <del>Estou escrevendo
+                tanto que estou até impressionado.</del> </p>
+            <h3>Texto inserido:</h3>
+            <p>Podemos marcar um texto como inserido para dar uma ênfase e indicar que ele foi adicionado depois.   O texto
+                vai ficar sublinhado usando a tag <strong>&lt;ins&gt;</strong>.   <strong>Ex:</strong> <ins>O bom de escrever
+                tanto é que estou ficando melhor na digitação.</ins></p>
+            <h3>Texto sobrescrito:</h3>
+            <p>Para inserir coisas do tipo x<sup>20</sup>+3. Aqui estamos usando a tag <strong>&lt;sup&gt;</strong>
+                dessa forma:</p>
+            <pre>x&lt;sup&gt;20&lt;/sup&gt;+3</pre>
+            <h3>Texto subscrito:</h3>
+            <p>Para inserir coisar do tipo H<sub>2</sub>O. Aqui estamos usando a tag <strong>&lt;sub&gt;</strong>
+                dessa forma:</p>
+            <pre>H&lt;sub&gt;2&lt;/sub&gt; O</pre>
+            <h3>Mais formatações:</h3>
+            <p>Temos a tag <strong>&lt;code&gt;</strong> que deixa o texto com uma formatação mais fácil de se ler. São usadas
+                geralmente para mostrar códigos de progamação</p>
+            <strong>Ex sem tag: </strong>document.getElementById('teste') <strong>Ex com tag:</strong> <code>document.
+                getElementById('teste')</code>.
+            <p>Chamamos esse essa fonte de mono espaçal. Mas usando apenas a tag <strong>&lt;code&gt;</strong> não vai dar para
+                escrever   código com a formatacão correta.  Como exemplo olhe esse código em python:</p>
+            <code>num = int(input('Digite um número:'))
+                if num % 2 == 0:
+                    print(f'O número {num} é PAR')  
+                else:
+                    pront(f'O número {num} é IMPAR')
+                print('Fim do programa')</code>
+            <p>No arquivo HTML está todo escrito com a formatação correta, mas quando abre o arquivo no   navegador, ele não
+                fica com a formatação apenas usando a tag <strong>&lt;code&gt;</strong>, então usamos a tag
+                <strong>&lt;pre&gt;</strong>  para fazer o navegador abrir da forma que escrevemos no arquivo.
+                <strong>Ex acima, mas agora entre as tags &lt;pre&gt;:</strong></p>
+            <picture>
+                <source media="(max-width: 700px)" srcset="../imagens/expython.png">
+                <img src="../imagens/exg.png" alt="">
+            </picture>
+            <p>isso acontende porque a tag <strong>&lt;pre&gt;</strong> usa a pre-formatação do seu arquivo HTML.</p>
+            <h3>Citações da forma correta:</h3>
+            <h4>Citações simples:</h4>
+            <p>Temos a tag <strong>&lt;q&gt;</strong> para colocar uma citação entre aspas, dá para colocar diretamente as aspas
+                na hora   de escrever,mas o <strong>HTML5</strong> é usado para dar <mark>sentido</mark> ao texto e não
+                simplesmente uma forma bonita   ou interativa.(isso é papel do CSS e do jávaScript).
+            <p><strong>Ex:</strong> </p>
+            <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p>
+            <h4>Citações completas:</h4>
+            <p>Temos a tag <strong>&lt;blockquote&gt;</strong>, que servem para citaçoes maiores e vai deixar o texto em bloco.
+            <p>Esse tipo de citação pode usar um parêmetro para dizer a fonte da citação dando o devido crédito ao autor.
+                basta na tag de abertura escrever: <strong>cite="e aqui colocar a url de onde você tirou a citação ou se foi
+                de um   livro, colocar o link para comprar-lo"</strong></p><strong>Ex:</strong> <blockquote>
+                A vida é uma tempestade, meu amigo. Um dia você está tomando sól e no dia seguinte o mar   te lánça contra
+                as rochas. O que faz de você um homem é o que você faz quando a tempestade vem.</blockquote></p>
+            <h3>Abreviações:</h3>
+            <p>Para abreviações temos a tag <strong>&lt;abbr&gt;</strong> quando colocar o mouse em cima da abreviação,
+                vai mostrar o que   você escrever na tag. Dentro da tag de abertura você vai escrever: <strong>title=
+                "Aqui vai colocar o significado da  abreviação"</strong></p>
+            <p><strong>Ex:</strong>  Estou aprendendo <abbr title="HyperText Markup language">HTML</abbr> e
+                <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+            <h2>Símbolos especiais:</h2>
+            <h3>Como adicionar:</h3>
+            <p>Muito simples, sempre começa com o 'e comercial' (Que é esse símbolo - &)
+                e no final   usa <strong>' ; '</strong> (Ponto e virgula). </p>
+            <h4>Símbolos frequentes:</h3>
+                &reg; - Marca registrada - <strong>'& reg'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                &copy; - Copyrigth - <strong>'& copy'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                &trade; - Trade Marquue - <strong>'& trade'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                &Delta; - Delta - <strong>'& Delta'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                &uArr; - Pra cima - <strong>'& uArr'</strong> tudo junto e com <strong>' ; '</strong> no final.  </p>
+            <h4>Moedas:</h3>
+                <p>&euro; - Euro - <strong>'& euro'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                &pound; - Libra - <strong>'& pound'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                &yen; - Yen - <strong>'& yen'</strong> tudo junto e com <strong>' ; '</strong> no final.
+                &cent; - Centavo Americano - <strong>'& cent'</strong> tudo junto e com <strong>' ; '</strong> no final.</p>
+            <p>Mais símbolos no site da <a target="_blank" href="https://erikasarti.com/html/dingbats-simbolos-desenhos/">erikasarti</a>, tem uma 
+            variedade muito grande.</p>
+            <h2>Emoji:</h2>
+            <h3>Simples e deixa seu site bem interativo</h3>
+            <p>O símbolo do emoji sempre começa com <strong>'& # x'</strong> tudo junto.  (Essa sequência de Símbolos quer
+                dizer que o valor é em exadecimal)
+            <p>&#x1f596; - O código desse emoji é: <strong>&#x 1f596;</strong> (Tudo junto).
+                &#x1F913; - O código desse emoji é: <strong>&#x 1f913;</strong> (Tudo junto).</p>
+            <p>Para não ter incompatibilidade com qualquer aparelho ou sistema pode pegar o código no site: 
+                <a target="_blank" href="https://emojipedia.org/">Emojipedia.org</a></p>
+        </section>
+
+    </section>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+</body>
+</html>

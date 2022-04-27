@@ -1,0 +1,150 @@
+:root {
+    --cor1: #03416E;
+    --cor2: #7996C3;
+    --cor3: #A8A8BD;
+    --cor4: #E1E1ED;
+    --cor5: #333333;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url(../imagens/wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.branco {
+    background-color: white;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+aside {
+    background-color: var(--cor4);
+    border-radius: 5px;
+    padding: 0px 20px 10px;
+    margin: 15px;
+}
+
+aside > h4 {
+    background-color: var(--cor5);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 20px -20px 20px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+pre {
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px 3px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+pre:hover {
+    background-color: var(--cor1);
+    color: white;
+    margin: 5px -15px;
+    border-radius: 0ch;
+    transition-duration: 0.5s;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+}
+
+section img {
+    background-color: var(--cor1);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 3px;
+    box-shadow: 1px 2px 5px var(--cor3);
+}
+
+audio {
+
+    background-color: var(--cor1);
+    border-radius: 30px;
+    margin: 20px 0;
+    padding: 3px;
+    box-shadow: 1px 2px 5px var(--cor3);
+}
+
+video {
+    background-color: var(--cor1);
+    border-radius: 20px;
+    margin: 20px 0;
+    padding: 3px;
+    box-shadow: 1px 2px 5px var(--cor3);
+}
+
+.videoex {
+    max-width: 200px;
+}
+
+div.video {
+    background-color: var(--cor1);
+    margin: 0px -5px 30px -5px;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 50%;
+    margin-top: 20px;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+code {
+    color: black;
+}
+
+section > p > a {
+    background-color: var(--cor1);
+    font-family: var(--forte);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 1px 3px;
+}
+p > a:hover {
+    text-decoration: underline;
+    background-color: var(--cor3);
+    color: white;
+    text-decoration: none;
+}
+
+strong {
+    font-family: var(--forte);
+    font-size: 1em;
+    font-weight: bolder;
+    color: var(--cor1);
+}
+
+mark {
+    background-color:var(--cor1);
+    border-radius: 2px;
+    color: var(--cor4);
+    padding: 2px;
+}
+

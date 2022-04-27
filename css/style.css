@@ -6,7 +6,7 @@
     --cor5: #333333;
 }
 
-html, body, #home {
+html, body {
     height: 100%;
 }
 
@@ -28,25 +28,9 @@ a {
     background: rgba(0, 0, 0, 0.39);
 }
 
-.btn-nav {
-    background-color: var(--cor5);
-    border: 1px solid white;
-    color: white;
-}
-
-.btn-nav:hover {
-    background-color: var(--cor1);
-    color: var(--cor5);
-    color: white;
-}
-
 #home {
     text-align: center;
-}
-
-h1 {
-    font-size: 5em;
-    margin-bottom: 15px;
+    height: 65%;
 }
 
 .btn-custom {
@@ -69,7 +53,7 @@ h1 {
 
 .btn-custom2:hover {
     background: var(--cor4);
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .conteudos {
@@ -111,25 +95,20 @@ h1 {
 }
 
 @media (max-width: 575.98px) {
-    .btn-custom {
-        margin: 10px 15px;
-        font-size: 1em;
+    .display-2 {
+        font-size: 3em;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    h1 {
-        font-size: 3em;
-    }
-
-    .btn-custom {
-        margin: 10px 15px;
+    .display-2 {
+        font-size: 3.5em;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-    h1 {
-        font-size: 4em;
+    .display-2 {
+        font-size: 4.5em;
     }
 
 }
@@ -143,4 +122,8 @@ h1 {
     h1 {
         font-size: 6em;
     }
+}
+
+.branca {
+    background-color: white;
 }
