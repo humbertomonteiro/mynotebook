@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS only -->   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6c34f0ed7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/stylepaginas.css">
+
+    <title>My Notebook - Primeiros Passos</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark nav-nav">
+
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../imagens/logo1.png" width="250">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a href="../paginasHome/html.html" class="nav-link">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/css.html" class="nav-link">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/bootstrap.html" class="nav-link">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/javascript.html" class="nav-link">JavaScript</a>
+                        </li>
+                
+                    </ul>
+
+                    <form class="ml-3">
+                        <div class="input-group">
+                            <input type="text" placeholder="Pesquisar..." class="form-control">
+                            <div class="input-group-append">
+                                <button class="btn btn-nav">ok</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="navbar navbar-expand-xl lateral">
+        <button class="navbar-toggler topico" data-toggle="collapse" data-target="#nav2">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="nav2">
+            <ul class="navbar-nav ul-lateral row">
+
+                <div class="row col-md-6">
+                    <div class=" col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/imagens.html" class="nav-link">Adicionar imagens</a>
+                        </li>
+                    </div>
+                    <div class=" col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/audio.html" class="nav-link">Adicionar Audíos</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/video.html" class="nav-link">Adicionar Videos</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="row col-md-6">    
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/listas.html" class="nav-link">Adicionar Listas</a>
+                        </li>
+                    </div>
+                
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/listas.html" class="nav-link">Adicionar Links</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Adicionar Tabelas</a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="branco">
+        <h1>Áudio no HTML:</h1><hr>
+        <h2>Usar áudio:</h2>
+        <h3>Como adicionar:</h3>
+        <p>Podemos adicionar áudios no nosso site também, usando a tag <strong>&lt;audio&gt;</strong>. Aqui vai o exemplo:</p>
+        <pre>&lt;audio src="exemplodeaudio.mp3"></áudio></pre>
+        <p>Assim seu áudio será inserido no seu arquivo, mas não vai tocar. Para tocar você pode colocar os parâmetros <strong>autoplay</strong>
+        que vai iniciar o áudio assim que o site for carregado ou o <strong>controls</strong> que mostrará um controle de áudio.
+        <div class="centro">
+            <audio src="../audios/audio1.mp3" controls></audio>
+        </div>
+        <p>Quando for usado o autoplay temos outra configuração que pode ser interesante na hora de colocar uma música de fundo no seu site.
+            o parâmetro loop faz o seu áudio rainiciar sem parar, é bem comum ser usado quando o áudio é curto. Ex:</p>
+        <p>Dependendo do navegador o audio não ira funcionar, mas temos como resolver esse problema usando autros formatos de áudio.
+            Temos os formatos <strong>OGG</strong>, <strong>WAV</strong> e o que usamos de exemplo <strong>MP3</strong>.
+            Você converte o áudio para esses três tipos e coloca no seu arquivo. Assim, se o navegardor não for conpativel com um, será com
+            o outro. Para colocar os três formatos temos que usar o <strong>type</strong>. Quando usamos a tag <strong>&lt;audio&gt;</strong>
+            ela se auto preenche com o <strong>src</strong>.</p>
+        <pre>&lt;audio src="">&lt;/audio></pre>
+        <p>Apagamos esse <strong>src</strong> e vamos dar um <strong>enter</strong> entre as tags de abertura e fechamento para colocarmos o
+        <strong>source</strong>. Vamos colocar manualmente o <strong>source</strong>. Vimos na parte de imagens no HTML que enquanto estamos digitando a palavra
+            source no seu <strong>visual studio code</strong>, vão aparecendo várias opções e você irá escolher a opção
+            <strong>source src</strong>. </p>
+        <p>Agora preencha com os áudios que você converteu e o tipo de cada um.</p>
+        <p>Para saber qual configuração usar em cada <strong>media type</strong> basta buscar nesse
+            <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blánk" rel="external">link</a>
+            o tipo de midia que irá usar. Clica   no link, então no teclado aperta <strong><q>ctrl f</q></strong> vai aparecer uma barra de
+            busca e é só buscar o tipo de arquivo que está   usando clicando no <strong><q>enter</q></strong>. Obs: Para navegar no site
+            em busca do que você quer, depois que pesquisou o tipo do   arquivo, basta ficar clicando no enter até achar.</p>
+        <p>Agora que está adicionado os princpais tipos de áudios colocaremos as pré configurações na tag áudio já citadas acima.
+            E se mesmo assim o áudio não for iniciado colocaremos uma forma dele ser baixado. Dessa forma o áudio será apresentado para
+            quem está navegando no site de alguma maneira.</p>
+        <p>Mais uma dica sobre tamanho de arquivo: Evite usar o tipo WAV de áudio porque mesmo sendo Compatível ele é   muito grande e pode
+            deixar seu site bem pesado.</p>
+    </section>
+    
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+</body>
+</html>

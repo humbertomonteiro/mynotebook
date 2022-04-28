@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS only -->   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6c34f0ed7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/stylepaginas.css">
+
+    <title>My Notebook - Primeiros Passos</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark nav-nav">
+
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../imagens/logo1.png" width="250">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a href="../paginasHome/html.html" class="nav-link">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/css.html" class="nav-link">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/bootstrap.html" class="nav-link">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/javascript.html" class="nav-link">JavaScript</a>
+                        </li>
+                
+                    </ul>
+
+                    <form class="ml-3">
+                        <div class="input-group">
+                            <input type="text" placeholder="Pesquisar..." class="form-control">
+                            <div class="input-group-append">
+                                <button class="btn btn-nav">ok</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="navbar navbar-expand-xl lateral">
+        <button class="navbar-toggler topico" data-toggle="collapse" data-target="#nav2">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="nav2">
+            <ul class="navbar-nav ul-lateral">
+
+                <div class="row">
+                    <div class=" col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/imagens.html" class="nav-link">Adicionar imagens</a>
+                        </li>
+                    </div>
+                    <div class=" col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/audio.html" class="nav-link">Adicionar Audíos</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/videosEmHtml.html" class="nav-link">Adicionar Videos</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/listas.html" class="nav-link">Adicionar Listas</a>
+                        </li>
+                    </div>
+                
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/listas.html" class="nav-link">Adicionar Links</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Adicionar Tabelas</a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="branco">
+        <h1>Links:</h1> <hr>
+        <h2>Tipos de links</h2>
+        <h3>Links externos:</h3>
+        <p>Você pode usar links usando a tag <strong>&lt;a&gt;</strong>. Vai aparecer a referência, da seguinte forma:</p>
+        <p><strong>&lt;a href="e aqui você coloca o link desejádo"</strong>. É recomendado que depois da referência usar
+            <strong>target="_blánk" rel="external"</strong> pois quando clicar no link, o mesmo irá se sobrepor ao seu,
+            então o primeiro parâmetro vai fazer abrir o link numa outra aba do navegar. Caso não use quem está navegando
+            no seu site, quando clicar no link dificilmente valtarão para o seu site. O outro parâmetro "rel" é usado como
+            uma referência para o navegador, indica como você quiser para onde deve ser o próximo passo a ser seguido. O
+            navegador pade dar a "rel" caso não coloque, então é muito importante o usó desse parâmetro.    </p>
+        <p>Aqui vai o exemplo de link, esse é o site do meu amigo Guanabara: <a href="https://gustavoguanabara.github.io/"
+            target="_blánk" rel="external"> Repositório público no GitHub.</a></p>
+        <p>Você Também pode acessar o canal dele: <a href="https://youtube.com/cursóemvideo/" target="_blánk" rel="external">
+            Canal gratuito no youtube.</a></p>
+        <h3>Usando links internos:</h3>
+        <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="../pg2.html" rel="next">
+            segunda página</a> Faço isso abrindo   um novo arquivo HTML no <strong>'Visual Studio Code'</strong> na mesma pasta que o
+            arquivo atual. Igual como os links externos,   basta usar a tag <strong>&lt;a&gt;</strong> e colocar a url do seu novo arquivo.
+            Uma forma mais fácil de fazer isso é usando o nome do arquivo que você criou. No link da minha segunda página foi feito assim:</p>
+        <pre>&lt;a href="pg2.html" rel="next">Página 2.&gt;</pre>
+        <p>Também pode criar um novo arquivo em uma pasta diferente, mas não poderá simplesmente colocar o nome do   arquivorecém  criado,
+            como no exemplo anterior, pois dará erro. Para resolver esse erro basta usar o atalho <strong>'ctrl'</strong> <strong>'espaço'
+            </strong> que vão aparecer todos os arquivos e pastas que você criou. Busque o arquivo abrindo as pastas e selecione   seu
+            link para funcionar.</p>
+        <p>Para entender melhor, fiz a uma pasta com o nome <strong>'maispg'</strong> e criei a <strong>'pg3.html'</strong>.
+            Agora veja como ficou: <pre>&lt;a href="maispg/pag003.html">Páginas.&gt;</pre>Fica com o nome da pasta
+            antes do nome do arquivo, mostrando o caminho para o sistema achar o arquivo solicitado.</p>
+        <p>Dentro da página 3 vai ter uma dica sobre usar links internos.
+        <a href="../maispg/pg3.html">Terceira página.</a></p>
+        <h3>Links para download:</h3>
+        <p>Fazer links para dawnload de PDF é muito simples, usa-se a tag <strong>&lt;a&gt;</strong> Também, mas possa ser que seu navegador
+            não baixe seu arquivo e apenas o mostre, para baixar você pode clicar no segundo botão do mouse e baixar link. Pode Também
+            tentar usar o parâmetro download com o nome do arquivo que quer baixar, se não funcionar tem mais uma configuração, o parâmetro type
+            que usa <strong>application/pdf</strong> para mídia em pdf.</p>
+        <p>Vou exemplificar com o PDF do <a href="pdf/pdfdelinks.pdf" download="pdfdelinks.pdf" type="application/pdf">curso em video</a> para
+            download. </p>
+        <p>Para saber qual configuração usar em cada <strong>media type</strong> basta buscar no site
+            <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blánk" rel="external">iana</a>
+            o tipo de mídia que irá usar. CLica no link, então no teclado aperta <strong><q>ctrl f</q></strong> vai aparecer uma barra de
+            busca e é só buscar o tipo de arquivo que está usando clicando no <strong><q>enter</q></strong>. Obs: Para navegar no site
+            em busca do que você quer, depois que pesquisou o tipo do arquivo, basta ficar clicando no enter até achar.</p>
+        <p>Você Também pode compactar seu PDF em ZIP e usar as seguintes configurações nos parâmetros já citados:
+            <pre>download="Arquivo zipado" type="application/zip"</pre>Dessa forma o seu navegador Também vai baixar o arquivo
+            do link.</p>
+    </section>
+    
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+</body>
+</html>

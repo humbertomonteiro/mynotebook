@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS only -->   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b6c34f0ed7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/stylepaginas.css">
+
+    <title>My Notebook - Primeiros Passos</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark nav-nav">
+
+            <div class="container">
+                <a href="../index.html" class="navbar-brand">
+                    <img src="../imagens/logo1.png" width="250">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                            <a href="../paginasHome/html.html" class="nav-link">HTML</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/css.html" class="nav-link">CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/bootstrap.html" class="nav-link">Bootstrap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../paginasHome/javascript.html" class="nav-link">JavaScript</a>
+                        </li>
+                
+                    </ul>
+
+                    <form class="ml-3">
+                        <div class="input-group">
+                            <input type="text" placeholder="Pesquisar..." class="form-control">
+                            <div class="input-group-append">
+                                <button class="btn btn-nav">ok</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="navbar navbar-expand-xl lateral">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav2">
+            <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="nav2">
+            <ul class="navbar-nav ul-lateral row">
+
+                <div class="row  col-md-6">
+                    <div class=" col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/imagens.html" class="nav-link">Adicionar imagens</a>
+                        </li>
+                    </div>
+                    <div class=" col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/audio.html" class="nav-link">Adicionar Audíos</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasmtml/video.html" class="nav-link">Adicionar Videos</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="row  col-md-6">    
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/listas.html" class="nav-link">Adicionar Listas</a>
+                        </li>
+                    </div>
+                
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="../paginasHtml/listas.html" class="nav-link">Adicionar Links</a>
+                        </li>
+                    </div>
+                    <div class="col-sm-4">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Adicionar Tabelas</a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="branco">                
+        <h1>Vídeo no HTML</h1><hr>
+        <h2>Adicionando vídeos:</h2>
+        <h3>Hospedados localmente:</h3>
+        <p>Os principais formatos de vídeo para serem usados são: MP4 (.mp4, .m4v), WEBM(.webm) e o OGV(.ogv).
+        Para mostrar o vídeo no arquivo basta usar a tag <strong>&lt;video&gt;</strong> que no visual studio code já vem auto preenchido
+        com <strong>src</strong>. exatamente assim:</p>
+        <pre>&lt;video src="exemplovideo.mp4">&lt;/video></pre>
+        <p>Temos o mesmo problema com direitos autorais com os vídeos, então vou pegar um vídeo sem direitos autorais no já citado </p>
+        <a href="https://www.pexels.com/pt-br/videos/" target="_blánk" rel="external">pexels</a> 
+        <p>e usar aqui como exemplo. Se não for usado com o parêmtro controls ficará exatamente assim:</p>
+        <div class="centro">
+            <video src="../videos/video1.mp4" width="200"></video>
+        </div>
+        <p>Assim fica com o parâmetro controls:</p>
+        <div class="centro">
+            <video src="../videos/video1.mp4" width="200" controls></video>
+        </div>
+        <p>Assim nós temos o mesmo problema com a questão de compatibilidade do seu navegador com o formato do vídeo. Para resolver faremos
+            da mesma forma que no áudio, com todos os formatos.</p>
+        <div class="centro">
+            <video controls >
+            <source src="exvideo1.mp4" type="video/mp4">
+            <source src="exvideo2.ogv" type="video/ogv">
+            <source src="exvideo3.webm" type="video/webm">
+        </div>
+        <p>Seu navegador não é Compatível com o vídeo.</a></p>
+        </video>
+        <p>Um parâmtro interessante de ser usado quando for colocar vídeos no seu site é o de capa para seu vídeo, pois se não colocar a capa
+            será o primeiro frame do vídeo, que na maioria das vezes não fica legal. O parâmetro é o <strong>poster</strong></p>
+        <div class="centro">
+            <video class="videoex" controls poster="../imagens/boneco.png">
+                <source src="../videos/video1.mp4" type="video/mp4">
+                <source src="../videos/video1.ogv" type="video/ogv">
+                <source src="../videos/video1.webm" type="video/webm">
+                <p>Seu navegador não é Compatível com o vídeo.</p>
+            </video>
+        </div>
+        <p>Estava com preguiça de fazer uma capa de exemplo, então usei a imagem que já tinha usado como exemplo. Os parâmetros de autoplay
+            e loop Também funcionam com vídeos.</p>
+        <h3>Incorporar vídeos com links externos:</h3>
+        <p>Vídeos da internet são muito simples de serem incorporados, você vai no vídeo que desejá por no seu site e   clica em compartilhar,
+            depois em incorporar se o dono do vídeo deixou liberado vai te gerar um link, copia   o link e cola no seu arquivo html.
+            Assista o vídeo do mestre guanabara e você entenderar tudo.</p>
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <p>No vídeo ele explica que o mais reconmendado é usar o youtube como base do seus vídeos, pois deixar tudo   hopedado em um servidor pago,
+            vai te gerar muito gasto e trabalho. </p>
+    </section>
+    
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+</body>
+</html>

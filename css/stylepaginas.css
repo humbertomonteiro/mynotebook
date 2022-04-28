@@ -23,6 +23,37 @@ header {
     background-color: rgba(0, 0, 0, 0.39);
 }
 
+.lateral {
+    justify-content: center;
+}
+
+.lateral button {
+    color: white;
+}
+
+.ul-lateral {
+    align-items: center;
+}
+
+.lateral li {
+    width: 170px;
+    margin: 10px;
+}
+
+.lateral li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.lateral li a:hover {
+    background-color: white;
+    color: black;
+    transition-duration: .7s;
+}
+
 .branco {
     background-color: white;
     padding: 20px;
@@ -63,7 +94,7 @@ pre:hover {
     transition-duration: 0.5s;
 }
 
-picture {
+.centro {
     display: flex;
     justify-content: center;
 }
@@ -77,11 +108,11 @@ section img {
 }
 
 audio {
-
     background-color: var(--cor1);
     border-radius: 30px;
     margin: 20px 0;
     padding: 3px;
+    width: 350px;
     box-shadow: 1px 2px 5px var(--cor3);
 }
 
