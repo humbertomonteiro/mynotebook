@@ -24,7 +24,7 @@ header {
 }
 
 .lateral {
-    justify-content: center;
+    justify-content: end;
 }
 
 .lateral button {
@@ -33,18 +33,17 @@ header {
 
 .ul-lateral {
     align-items: center;
+    margin: 2px;
 }
 
 .lateral li {
-    width: 170px;
-    margin: 10px;
+    width: 150px;
 }
 
 .lateral li a {
     color: white;
     font-weight: bold;
     text-align: center;
-    border: 1px solid white;
     border-radius: 10px;
 }
 
@@ -59,6 +58,7 @@ header {
     padding: 20px;
     max-width: 900px;
     margin: auto;
+    border-radius: 0 0 5px 5px;
 }
 
 aside {
@@ -154,7 +154,7 @@ section > p > a {
     background-color: var(--cor1);
     font-family: var(--forte);
     color: white;
-    border-radius: 5px;
+    border-radius: 5px ;
     text-decoration: none;
     padding: 1px 3px;
 }
@@ -179,3 +179,31 @@ mark {
     padding: 2px;
 }
 
+footer {
+    background-color: #33333346;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+footer img, .linkfooter {
+    margin: 1.5em;
+}
+
+.imgf {
+    width: 16em;
+}
+
+footer h4, .linkfooter {
+    color: var(--cor3);
+    margin: 20px;
+    font-size: 1em;
+    display: flex;
+}
+
+footer i {
+    font-size: 3em;
+    margin-left: 1.5em;
+}

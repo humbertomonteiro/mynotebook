@@ -94,6 +94,35 @@ a {
     border: 1px solid white;
 }
 
+footer {
+    background-color: #333333e1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 30px;
+    justify-content: space-around;
+}
+
+footer img, .linkfooter {
+    margin: 1.5em;
+}
+
+.imgf {
+    width: 16em;
+}
+
+footer h4, .linkfooter {
+    color: var(--cor3);
+    margin: 20px;
+    font-size: 1em;
+    display: flex;
+}
+
+footer i {
+    font-size: 3em;
+    margin-left: 1.5em;
+}
+
 @media (max-width: 575.98px) {
     .display-2 {
         font-size: 3em;
