@@ -180,30 +180,42 @@ mark {
 }
 
 footer {
-    background-color: #33333346;
+    background-color: #333333b2;
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;
-    padding: 20px;
+    padding: 1em;
     justify-content: space-around;
 }
 
-footer img, .linkfooter {
-    margin: 1.5em;
+.footerinfo {
+    margin: 1em 4em;
+}
+
+.linkfooter {
+    color: white;
+    margin: 1em 0;
+    display: flex;
+}
+
+.linkfooter:hover {
+    text-decoration: none;
+    color: var(--cor3);
 }
 
 .imgf {
     width: 16em;
 }
 
-footer h4, .linkfooter {
-    color: var(--cor3);
-    margin: 20px;
-    font-size: 1em;
-    display: flex;
-}
-
 footer i {
     font-size: 3em;
-    margin-left: 1.5em;
+    margin-left: 1.1em;
+}
+
+.linksocial {
+    color: var(--cor4);
+}
+
+.linksocial:hover {
+    color: var(--cor3);
 }
