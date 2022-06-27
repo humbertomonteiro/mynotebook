@@ -31,7 +31,11 @@ a {
 
 #home {
     text-align: center;
-    height: 65%;
+    height: 30em;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 0;
 }
 
 .btn-custom {
@@ -84,7 +88,6 @@ a {
     color: orangered;
 }
 
-
 .css {
     color: blue;
 }
@@ -124,7 +127,7 @@ footer {
 }
 
 .imgf {
-    width: 13em;
+    width: 17em;
     margin: 2em 0;
 }
 
