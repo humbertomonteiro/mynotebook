@@ -111,11 +111,10 @@ footer {
 }
 
 .footerinfo {
-    margin: 1em 4em;
+    margin: 1em 3em;
 }
 
 .linkfooter {
-    margin: 1em 0;
     display: flex;
 }
 
@@ -125,12 +124,17 @@ footer {
 }
 
 .imgf {
-    width: 16em;
+    width: 13em;
+    margin: 2em 0;
+}
+
+footer h4 {
+    color: var(--cor2);
 }
 
 footer i {
     font-size: 3em;
-    margin-left: 1.1em;
+    margin: 1em;
 }
 
 @media (max-width: 575.98px) {
@@ -142,6 +146,10 @@ footer i {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .display-2 {
         font-size: 3.5em;
+    }
+    footer i {
+        font-size: 2em;
+        margin: 0.8em;
     }
 }
 

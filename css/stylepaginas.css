@@ -205,11 +205,16 @@ footer {
 
 .imgf {
     width: 16em;
+    margin: 2em 0;
+}
+
+footer h4 {
+    color: var(--cor2);
 }
 
 footer i {
     font-size: 3em;
-    margin-left: 1.1em;
+    margin: 1.1em;
 }
 
 .linksocial {
