@@ -23,21 +23,16 @@ header {
     background-color: rgba(0, 0, 0, 0.39);
 }
 
-.lateral {
-    justify-content: end;
-}
-
 .lateral button {
     color: white;
 }
 
 .ul-lateral {
     align-items: center;
-    margin: 1em;
 }
 
 .lateral li {
-    width: 10em;
+    width: 9em;
 }
 
 .lateral li a {
@@ -55,10 +50,14 @@ header {
 
 .branco {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     max-width: 900px;
     margin: auto;
     border-radius: 0 0 5px 5px;
+}
+
+h1 {
+    font-size: 2.5em;
 }
 
 aside {
@@ -189,12 +188,10 @@ footer {
 }
 
 .footerinfo {
-    margin: 1em 4em;
+    margin: 1em 3em;
 }
 
 .linkfooter {
-    color: white;
-    margin: 1em 0;
     display: flex;
 }
 
@@ -214,13 +211,51 @@ footer h4 {
 
 footer i {
     font-size: 3em;
-    margin: 1.1em;
+    margin: 1em;
 }
 
-.linksocial {
-    color: var(--cor4);
+footer a {
+    color: white;
 }
 
-.linksocial:hover {
-    color: var(--cor3);
+@media (max-width: 575.98px) {
+    #inicio {
+        width: 190px;
+    }
+    .display-2 {
+        font-size: 2.5em;
+    }
+    
+    footer i {
+        font-size: 2.2em;
+        margin: 1em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #inicio {
+        width: 190px;
+    }
+
+    .display-2 {
+        font-size: 3em;
+    }
+
+    footer i {
+        font-size: 2.2em;
+        margin: 1em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .display-2 {
+        font-size: 4.5em;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding: 0;
+    }
 }

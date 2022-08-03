@@ -31,7 +31,7 @@ a {
 
 #home {
     text-align: center;
-    height: 30em;
+    height: 22em;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -61,20 +61,23 @@ a {
     color: rgb(0, 0, 0);
 }
 
+.espaco {
+    line-height: 200px;
+}
+
+.branca {
+    background-color: white;
+}
+
 .conteudos {
-    background: white;
     padding-top: 30px;
     padding-bottom: 20px;
 }
 
-.conteudos2 {
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-
-.conteudos2 i {
-    font-size: 6em;
+.conteudos i {
+    font-size: 5em;
     margin: 10px;
+    justify-content: center;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -105,7 +108,7 @@ a {
 }
 
 footer {
-    background-color: #333333b2;
+    background-color: #000000b2;
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;
@@ -141,18 +144,31 @@ footer i {
 }
 
 @media (max-width: 575.98px) {
+    #inicio {
+        width: 190px;
+    }
     .display-2 {
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+    
+    footer i {
+        font-size: 2.2em;
+        margin: 1em;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .display-2 {
-        font-size: 3.5em;
+    #inicio {
+        width: 190px;
     }
+
+    .display-2 {
+        font-size: 3em;
+    }
+
     footer i {
-        font-size: 2em;
-        margin: 0.8em;
+        font-size: 2.2em;
+        margin: 1em;
     }
 }
 
@@ -172,8 +188,4 @@ footer i {
     h1 {
         font-size: 6em;
     }
-}
-
-.branca {
-    background-color: white;
 }
