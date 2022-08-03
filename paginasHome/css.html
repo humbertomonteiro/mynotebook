@@ -58,6 +58,86 @@
 
         </nav>
     </header>
+    <section class="navbar navbar-expand-xl lateral">
+        <button style="padding: 15px 2px 0px 2px;" class="navbar-toggler" data-toggle="collapse" data-target="#nav2">
+            <p>Mais sobre CSS <i class="fas fa-bars fa-lg"></i></p>
+        </button>
+        <div class="collapse navbar-collapse centro" id="nav2">
+            <ul class="navbar-nav ul-lateral row">
+
+                <div class="row">
+                    <div class=" col-xs-4">
+                        <li class="nav-item">
+                            <a href hf-nav="../paginasCss/formas.html" class="nav-link">Formas</a>
+                        </li>
+                    </div>
+                    <div class=" col-xs-4">
+                        <li class="nav-item">
+                            <a href hf-nav="../paginasCss/audio.html" class="nav-link">Audíos</a>
+                        </li>
+                    </div>
+                    <div class="col-xs-4">
+                        <li class="nav-item">
+                            <a href hf-nav="../paginasCss/video.html" class="nav-link">Videos</a>
+                        </li>
+                    </div>
+                    <div class="col-xs-4">
+                        <li class="nav-item">
+                            <a href hf-nav="../paginasCss/listas.html" class="nav-link">Listas</a>
+                        </li>
+                    </div>
+                
+                    <div class="col-xs-4">
+                        <li class="nav-item">
+                            <a href hf-nav="../paginasCss/links.html" class="nav-link">Links</a>
+                        </li>
+                    </div>
+                    <div class="col-xs-4">
+                        <li class="nav-item">
+                            <a href hf-nav="../paginasCss/tabelas.html" class="nav-link">Tabelas</a>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <section id="conteudo" class="branco"></section>
+    <footer class="">
+        <div class="col-xs-4">
+            <a href="../index.html">
+                <img class="imgf" src="../imagens/logo1.png">
+            </a>
+        </div>
+        <div class="col-xs-4 row">
+            <div class="footerinfo">
+                <h4>INICIO</h4>
+                <a class="linkfooter" href="../index.html">Home</a>
+                <a class="linkfooter" href="Home">Professores</a>
+            </div>
+            <div  class="footerinfo">
+                <h4>SOBRE NÓS</h4>
+                <a class="linkfooter" href="home">Informações</a>
+                <a class="linkfooter" href="https://github.com/humbertomonteiro" target="_blank">Git Hub</a>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <a href="https://www.instagram.com/humberto.fh/" target="_blank"><i class="fa-brands fa-instagram linksocial"></i></a>
+            <a href="https://www.facebook.com/humbertoaraujof/" target="_blank"><i class="fa-brands fa-facebook linksocial"></i></a>
+            <a href="https://twitter.com/h1bertof" target="_blank"><i class="fa-brands fa-twitter linksocial"></i></a>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll('[hf-nav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e) {
+                e.preventDefault()
+                fetch(link.getAttribute('hf-nav'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
