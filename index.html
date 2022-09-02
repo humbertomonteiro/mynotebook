@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -11,15 +13,15 @@
     <script src="https://kit.fontawesome.com/b6c34f0ed7.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/stylepaginas.css">
+    
     <link rel="shortcut icon" href="imagens/logo2.png" type="image/x-icon">
 
     <title>My Notebook</title>
   </head>
   <body>
-    <header>
+    <header class="scroll1">
         <nav class="navbar navbar-expand-md navbar-dark nav-nav">
-
             <div class="container">
                 <a href="index.html" class="navbar-brand">
                     <img id="inicio" src="imagens/logo1.png" width="250">
@@ -32,13 +34,10 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item">
-                            <a href="paginasHome/html.html" class="nav-link">HTML</a>
+                            <a href hf-nav="paginasHome/html.html" class="nav-link">HTML</a>
                         </li>
                         <li class="nav-item">
                             <a href="paginasHome/css.html" class="nav-link">CSS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="paginasHome/bootstrap.html" class="nav-link">Bootstrap</a>
                         </li>
                         <li class="nav-item">
                             <a href="paginasHome/javascript.html"  class="nav-link">JavaScript</a>
@@ -57,13 +56,54 @@
 
                 </div>
             </div>
+        </nav>
+
+        <nav id="navHtml" class="navbar navbar-expand-md nav-nav">
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav2">
+                    <i class="fas fa-bars"></i>
+                </button>
+            <div class="collapse navbar-collapse" id="nav2">
+        
+                <ul class="navbar-nav ml-auto">
+                        
+                    <li class="nav-item">
+                        <a href hf-nav="../paginasHtml/imagens.html" class="nav-link">imagens</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href hf-nav="../paginasHtml/audio.html" class="nav-link">Audíos</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href hf-nav="../paginasHtml/video.html" class="nav-link">Videos</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href hf-nav="../paginasHtml/listas.html" class="nav-link">Listas</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href hf-nav="../paginasHtml/links.html" class="nav-link">Links</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a href hf-nav="../paginasHtml/tabelas.html" class="nav-link">Tabelas</a>
+                    </li>
+        
+                </ul>
+        
+            </div>
 
         </nav>
+
     </header>
-    <main id="hf-nav">
-        <section id="home" class="d-flex">
-            <div class="container text-white align-self-center">
-                <div class="row">
+
+    <main>
+
+        <section id="home">
+            <div class="container text-white align-self-center scroll1">
+                <div class="row carrosel">
                     <div class="col-md-12">
                         <div id="slide" class="carousel slid" data-ride="carousel">
                             <div class="carousel-inner">
@@ -87,12 +127,13 @@
                                 <i class="fas fa-angle-right fa-3x"></i>
                             </a>
                         </div>
-                        <a href="paginasHome/html.html" class="btn btn-lg btn-custom">HTML</a>
+                        <a href hf-nav="paginasHome/html.html" class="btn btn-lg btn-custom">HTML</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="conteudos branca">
+
+        <section class="main-conteudos scroll branco">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -114,7 +155,7 @@
                 <div id="git"></div>
             </div>
         </section>
-        <section class="conteudos text-white">
+        <section class="main-conteudos scroll text-white">
             <div class="container">
                 <div class="row">
         
@@ -134,37 +175,34 @@
                 </div>
             </div>
         </section>
-        <section class="conteudos branca">
+        <section class="main-conteudos scroll branco">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="imagens/guana.png" width="400" class="img-fluid">
+                        <img src="imagens/bootstrap.png" alt="">
                     </div>
                     <div class="col-md-6">
-                        <h2 class="display-4">Professor Guanabara</h2>
-                        <p>Comecei meus estudos no Youtube, e lá conheci o Professor
-                            Gustavo Guanabara. Ele tem uma didatica incrível, e foi das
-                            aulas dele que eu tirei o conteudo desse site.
+                        <h2 class="display-4">Bootstrap</h2>
+                        <p>Um framework frnt-end que fornece estruturas css para ficar mais simples de fazer sua interface
                         </p>
-                        <h2>Curso em Vídeo</h2>
-                        <p>O canal do Youtube e o site dele é o Curso em Vídeo, você pode
-                            começar por onde quiser, mas aqui vai uma dica: É melhor no site,
-                            lá você ao termino do curso pode pagar um valor simbolico para ter
-                            seus certificados.
+                        <h2>Acesse aqui</h2>
+                        <p>No material disponibilizado pelo próprio site você irá conseguir fazer coisas incriveis de uma
+                            forma muito simples.
                         </p>
-                        <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blanck" class="btn btn-custom2 btn-lg">YouTube</a>
-                        <a href="https://www.cursoemvideo.com/" target="_blanck" class="btn btn-custom2 btn-lg">Curso em Vídeo</a>
+                        <a href="https://getbootstrap.com/" target="_blanck" class="btn btn-custom2 btn-lg">site</a>
+                        
                     </div>
                 </div>
             </div>
         </section>
-        <section id="itens" class="conteudos text-white">
+
+        <section id="itens" class="main-conteudos text-white">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <a class="tecnologias" href="paginasHome/html.html">
+                    <div class="col-md-4 scroll">
+                    <a class="tecnologias" href="#inicio" hf-nav="paginasHome/html.html">
                             <div>
-                                    <i class="fa-brands fa-html5 html"></i>
+                                <i class="fa-brands fa-html5 html"></i>
                                 <div>
                                     <h3>HTML</h3>
                                     <p>Veja tags, como adicionar midias, usar links, listas e outras
@@ -173,7 +211,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4 scroll">
                         <a class="tecnologias" href="paginasHome/css.html">
                             <div>
                                 <i class="fa-brands fa-css3-alt css"></i>
@@ -184,20 +222,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-3">
-                        <a class="tecnologias" href="paginasHome/bootstrap.html">
-                            <div>
-                                <i class="fa-brands fa-bootstrap boot"></i>
-                                <div class="">
-                                    <h3>Bootstrap</h3>
-                                    <p>Aprenda as principais formatações de Bootstrap e tenha mais
-                                        praticidade na hora de fazer suas configurações.
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-3">
+                    
+                    <div class="col-md-4 scroll">
                         <a class="tecnologias" href="paginasHome/javascript.html">
                             <div>
                                 <i class="fa-brands fa-js-square js"></i>
@@ -213,8 +239,11 @@
                 </div>
             </div>
         </section>
+
     </main>
-    <footer class="">
+
+
+    <footer class="scroll">
         <div class="col-xs-4">
             <a href="#inicio">
                 <img class="imgf" src="../imagens/logo1.png" alt="">
@@ -223,7 +252,7 @@
         <div class="col-xs-4 row">
             <div class="footerinfo">
                 <h4>INICIO</h4>
-                <a class="linkfooter" href="#inicio ">Home</a>
+                <a class="linkfooter" href="#inicio">Home</a>
                 <a class="linkfooter" href="Home">Professores</a>
             </div>
             <div  class="footerinfo">
@@ -238,30 +267,8 @@
             <a href="https://twitter.com/h1bertof" target="_blank"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </footer>
-    <script>
-        document.querySelectorAll('[hf-nav]').forEach(link => {
-            const conteudo = document.getElementById('conteudo')
 
-            link.onclick = function(e) {
-                e.preventDefault()
-                fetch(link.getAttribute('hf-nav'))
-                    .then(resp => resp.text())
-                    .then(html => conteudo.innerHTML = html)
-            }
-        })
-
-        document.querySelectorAll('[hf-git]').forEach(link2 => {
-            const conteudoGit = document.getElementById('git')
-
-            link2.onclick = function(a) {
-                a.preventDefault()
-                fetch(link2.getAttribute('hf-git'))
-                    .then(resp => resp.text())
-                    .then(html => conteudoGit.innerHTML = html)
-            }
-        })
-        
-        </script>
+    <script src="js/app.js"></script>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

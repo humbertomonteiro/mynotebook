@@ -29,9 +29,10 @@ a {
     background: rgba(0, 0, 0, 0.39);
 }
 
-#home {
+.carrosel {
     text-align: center;
-    height: 22em;
+    min-height: 35em;
+    padding-top: 10em;
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -61,24 +62,32 @@ a {
     color: rgb(0, 0, 0);
 }
 
-.espaco {
-    line-height: 200px;
+.letraBranca {
+    color: white;
 }
 
-.branca {
+.branco {
     background-color: white;
 }
 
-.conteudos {
-    padding-top: 30px;
-    padding-bottom: 20px;
+.displayBlock {
+    display: block;
 }
 
-.conteudos i {
+.displayNone {
+    display: none;
+}
+
+.main-conteudos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    visibility: hidden;
+}
+
+.main-conteudos i {
     font-size: 5em;
     margin: 10px;
-    justify-content: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
 }
 
 .tecnologias:hover {
@@ -95,16 +104,8 @@ a {
     color: blue;
 }
 
-.boot {
-    color: purple;
-}
-
 .js {
     color: yellow;
-}
-
-.caixa {
-    border: 1px solid white;
 }
 
 footer {
@@ -112,7 +113,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;
-    padding: 1em;
+    padding: 4em;
     justify-content: space-around;
 }
 
@@ -180,12 +181,12 @@ footer i {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    h1 {
+    .display-2 {
         font-size: 5em;
     }
 }
 @media (min-width: 1200px) {
-    h1 {
+    .display-2 {
         font-size: 6em;
     }
 }

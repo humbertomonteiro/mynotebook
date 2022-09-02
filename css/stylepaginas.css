@@ -6,60 +6,6 @@
     --cor5: #333333;
 }
 
-html, body {
-    height: 100%;
-}
-
-body {
-    background: url(../imagens/wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: Helvetica, Arial, sans-serif;
-    color: black;
-}
-
-header {
-    background-color: rgba(0, 0, 0, 0.39);
-}
-
-.lateral button {
-    color: white;
-}
-
-.ul-lateral {
-    align-items: center;
-}
-
-.lateral li {
-    width: 9em;
-}
-
-.lateral li a {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.lateral li a:hover {
-    background-color: white;
-    color: black;
-    transition-duration: .7s;
-}
-
-.branco {
-    background-color: white;
-    padding: 10px;
-    max-width: 900px;
-    margin: auto;
-    border-radius: 0 0 5px 5px;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
 aside {
     background-color: var(--cor4);
     border-radius: 5px;
@@ -99,11 +45,9 @@ pre:hover {
 }
 
 section img {
-    background-color: var(--cor1);
     border-radius: 20px;
     margin-bottom: 20px;
     padding: 3px;
-    box-shadow: 1px 2px 5px var(--cor3);
 }
 
 audio {
