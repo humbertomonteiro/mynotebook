@@ -23,6 +23,8 @@ hfNav.forEach(link => {
         a.preventDefault()
 
         removerClass('#navHtml', 'displayNone')
+        addClass('#navClones', 'displayNone')
+        removerClass('#navClones', 'centro')
         addClass('#css', 'displayNone')
 
         fetch(link.getAttribute('hf-nav'))
@@ -40,7 +42,7 @@ hfCss.forEach(link => {
     link.onclick = function(a) {
         a.preventDefault()
 
-        toggleClass('#css', 'displayNone')
+        toggleClass('#navClones', 'displayNone')
         addClass('#navHtml', 'displayNone')
     
         fetch(link.getAttribute('hf-css'))
@@ -50,17 +52,45 @@ hfCss.forEach(link => {
     
 })
 
+const hfClone = document.querySelectorAll('[hf-clone]')
+hfClone.forEach(link => {
+    const conteudoHtml = document.getElementById('home')
+
+    link.onclick = function(a) {
+        a.preventDefault()
+
+        toggleClass('#css' , 'displayNone')
+    }
+})
+
+//ajax para js
+
+const hfJs = document.querySelectorAll('[hf-js]')
+hfJs.forEach(link => {
+    const conteudoHtml = document.getElementById('home')
+
+    link.onclick = function(a) {
+        a.preventDefault()
+
+        addClass('#navHtml', 'displayNone')
+        removerClass('#navClones', 'centro')
+        addClass('#navClones', 'displayNone')
+        addClass('#css', 'displayNone')
+
+        fetch(link.getAttribute('hf-js'))
+            .then(resp => resp.text())
+            .then(html => conteudoHtml.innerHTML = html)
+    }
+})
+
 //ajax para navegar git
 
 const hfGit = document.querySelectorAll('[hf-git]')
 hfGit.forEach(link => {
     const conteudoGit = document.getElementById('git')
-    const git = document.querySelector('#containerGit').classList
 
     link.onclick = function(a) {
         a.preventDefault()
-
-        git.remove('scroll')
 
         fetch(link.getAttribute('hf-git'))
             .then(resp => resp.text())
@@ -95,7 +125,5 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
 
 VanillaTilt.init(document.querySelectorAll(".card2"), {
     max: 25,
-    speed: 400,
-    glare: true,
-    "max-glare": 1
+    speed: 400
 })

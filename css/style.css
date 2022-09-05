@@ -143,12 +143,13 @@ footer {
     color: var(--cor4);
 }
 
-.linkSociais {
+.link {
     text-decoration: none;
     color: var(--cor4);
 }
 
-.linkSociais:hover {
+.link:hover {
+    text-decoration: none;
     color: var(--cor3);
 }
 
