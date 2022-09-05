@@ -12,10 +12,7 @@ html, body {
 
 
 body {
-    background: url(../imagens/wallpaper.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #0d142e;
     font-family: Helvetica, Arial, sans-serif;
     color: black;
 }
@@ -23,10 +20,6 @@ body {
 a {
     color: white;
     text-decoration: none;
-}
-
-.nav-nav {
-    background: rgba(0, 0, 0, 0.39);
 }
 
 .navPaginas {
@@ -52,6 +45,8 @@ a {
     border-radius: 10px;
     margin: 20px;
     border: 1px solid white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
+    
 }
 
 .btn-custom:hover {
@@ -64,6 +59,7 @@ a {
     border-radius: 10px;
     margin: 20px;
     border: 1px solid black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.548);
 }
 
 .btn-custom2:hover {
@@ -76,7 +72,12 @@ a {
 }
 
 .branco {
-    background-color: rgb(241, 241, 241);
+    background-color: rgba(241, 241, 241, 0.973);
+    box-shadow: 20px 20px 50px black;
+}
+
+.colorido {
+    background-image: linear-gradient(to bottom, #0d142e, #3b4c64, #0d142e);
 }
 
 .displayBlock {
@@ -99,6 +100,11 @@ a {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
 }
 
+.tecnologias {
+    max-width: 350px;
+    padding: 10px;
+}
+
 .tecnologias:hover {
     text-decoration: none;
     color: var(--cor2);
@@ -118,10 +124,8 @@ a {
 }
 
 footer {
-    background-color: #000000b2;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
     padding: 4em;
     justify-content: space-around;
 }
@@ -136,6 +140,15 @@ footer {
 
 .linkfooter:hover {
     text-decoration: none;
+    color: var(--cor4);
+}
+
+.linkSociais {
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+.linkSociais:hover {
     color: var(--cor3);
 }
 

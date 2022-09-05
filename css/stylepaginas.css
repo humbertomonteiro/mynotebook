@@ -127,46 +127,6 @@ mark {
     padding: 2px;
 }
 
-footer {
-    background-color: #333333b2;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 15px;
-    padding: 1em;
-    justify-content: space-around;
-}
-
-.footerinfo {
-    margin: 1em 3em;
-}
-
-.linkfooter {
-    display: flex;
-}
-
-.linkfooter:hover {
-    text-decoration: none;
-    color: var(--cor3);
-}
-
-.imgf {
-    width: 17em;
-    margin: 2em 0;
-}
-
-footer h4 {
-    color: var(--cor2);
-}
-
-footer i {
-    font-size: 3em;
-    margin: 1em;
-}
-
-footer a {
-    color: white;
-}
-
 @media (max-width: 575.98px) {
     #inicio {
         width: 190px;
