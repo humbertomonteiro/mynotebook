@@ -17,29 +17,38 @@ hfNav.forEach(link => {
     }
 })
 
-//aparecer nav html
+const hfCss = document.querySelectorAll('[hf-css]')
+hfCss.forEach(link => {
+    const conteudoHtml = document.querySelector('#home')
+    
+    link.onclick = function(a) {
+        a.preventDefault()
 
-// const divHtml = document.querySelector('#aparecerHtml').classList
-// divHtml.onclick = e => {
-//     e.preventDefault()
-
-//     divHtml.remove('displayNone')
-//     divHtml.add('displayBlock')
-// }
+        fetch(link.getAttribute('hf-css'))
+            .then(resp => resp.text())
+            .then(html => conteudoHtml.innerHTML = html)
+    }
+})
 
 //ajax para navegar git
 
 const hfGit = document.querySelectorAll('[hf-git]')
 hfGit.forEach(link => {
     const conteudoGit = document.getElementById('git')
+    const git = document.querySelector('#containerGit').classList
 
     link.onclick = function(a) {
         a.preventDefault()
+
+        git.remove('scroll')
+
         fetch(link.getAttribute('hf-git'))
             .then(resp => resp.text())
             .then(html => conteudoGit.innerHTML = html)
     }
 })
+
+
 
 //animação scroll
 

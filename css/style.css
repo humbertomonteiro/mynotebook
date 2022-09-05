@@ -33,8 +33,9 @@ a {
     margin:auto;
 }
 
-button .togglePaginas{
-    margin-left: 10em;
+.togglePaginas{
+    margin-left: 85%;
+    color: var(--cor3);
 }
 
 .carrosel {
@@ -75,7 +76,7 @@ button .togglePaginas{
 }
 
 .branco {
-    background-color: white;
+    background-color: rgb(241, 241, 241);
 }
 
 .displayBlock {
