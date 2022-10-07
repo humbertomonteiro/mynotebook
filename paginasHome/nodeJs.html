@@ -1,0 +1,66 @@
+<h2>comandos básicos no terminal</h2>
+
+<ul>
+    <li>mkdir - criar pasta(usa o comando em seguida o nome da pasta e preciona enter)</li>
+    <li>cd - pasta</li>
+    <li>cd funcoes - para entrar na pasta desejada usa-se o codigo cd e o nome da pasta</li>
+    <li>pwd - saber em qual pasta está</li>
+    <li>-v - saber a versão</li>
+    <li>npm - é o geranciador de pacotes do node</li>
+    <li>npm init - configurar arquivo package.json</li>
+    <li>npm init -y - faz o arquivo de forma automatica</li>
+    <li>npm i - significa install (tambem pode ser escrito install) serve para intalar 
+        bibliotecas ou dependencias que estão no packad.json</li>
+</ul>
+
+<h2>sobre o arquivo package.json:</h2>
+
+<p>
+    esse arquivo vai ter a descrição de todas as dependencias que
+    seu projeto precisa. Baixado dependencia dessa forma:
+    npm i --save axios - usamos o <strong>--save</strong> para gerar uma area que será
+    colocado as dependencias do seu projeto.
+</p>
+<p>
+    no exemplo acima com o axios a versão aparece do lado da seguinte forma:
+    "exios": "^0.27.2"
+    
+    temos um sinal e uma sequencia com tres numeros. O primeiro é o minor, o
+    segundo major e o ultimo o fix
+</p>
+
+<p>
+    o sinal passado no exemplo foi o circunflexo. Isso quer dizer que a versão
+    da sua dependencia poderar atualizar automaticamente, apenas o mejor até a versão 99,
+    mas não poderar atualizar o minor, no caso chegar na versão 1 do minor.
+    
+    pode alterar o sinal. Usando o ~ só irá atualizar automaticamente a versão do fix
+    
+    e se não usar nenhum sinal, quer dizer que só vai usar a versão informada
+</p>
+
+<p>
+    a forma de ter dependencias mostrada ate agora fofram de forma global, mas
+    tem como baixar dependencias necessarias apenas no desenvolvimento da aplicação.
+    usando o mesmo exemplo do axios fariamos o seguinte comando no terminal para baixar:
+    npm  i --save-dev axios@0.27.2 -E
+    npm e o i já sabemos o que é, o --save-dev serve para informar que só é necessaria termos
+    as bibliotecas ou dependencias no desenvolvimento. Em seguida informamos a dependencia que
+    queremos baixar (no caso o axios). Depois o sinal @ (que serve para informar a versão que
+    será baixada), e por ultimo o -E para informar que quer que instale exatamente a versão passada.
+</p>
+
+<!-- aula 160 da seção node: -->
+<h2>Usar scripts</h2>
+
+<p>
+    no exemplo foi adicionado dois scripts com a mesma função, chamar o nodemon que serve para executar
+    o código sem precisar usar atalhos ou botões, apenas salvando o código.
+    
+    o primeiro script nomeamos como start e o segundo como dev.
+    
+    para startar o script start que é um comando padrão do node vamos dar o comando <strong>npm start</strong>
+    no terminal. Agora para conseguir startar o script nomeado com o código não padrão temos que chamar usando
+    o rum, da seguinte forma: npm rum dev
+</p>
+
