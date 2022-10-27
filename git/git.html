@@ -10,12 +10,12 @@
     </p>
     <p>E quando vamos melhorando ou adicionando funcionalidades a nossas aplicações
         podemos ter alguns imprevistos ou até pedidos de clientes que querem voltar a
-        maneira entiga do projeto.
+        maneira antiga do projeto.
     </p>
-    <p>O git surgiu justamente para resolver esse problema, com comando simples podemos
-        voltar a como projeto era, se não tivessemos esse programa, teriamos muitos problemas.
-        Quando um projeto é pequeno, ainda dá pra resolver umas mudancinhas, mas quando temos
-        uma grande aplicação temos que ter esse recurso para termos mais praticidade e eficiencia.
+    <p>O git surgiu justamente para resolver esse problema, com comandos simples podemos
+        voltar a como projeto era e se não tivessemos esse programa, teriamos muitos problemas.
+        Quando um projeto é pequeno, ainda dá pra resolver com umas mudancinhas, mas quando temos
+        uma grande aplicação, temos que ter esse recurso para sermos mais práticos e eficientes.
     </p>
 
     <h2>Comandos</h2>
@@ -28,10 +28,10 @@
         e-mail de contato.
     </p>
     <h3>Para iniciar</h3>
-    <p>No visual studio code vamos da nosso primeiro comando para inicializarmos o git. Para abrir
+    <p>No visual studio code vamos dar nosso primeiro comando para inicializarmos o git. Para abrir
         o terminal usamos as teclas ctrl j. E no terminal vamos digitar o comando git init.
-        Nessa hora vai aparecer uma mensajgem informando que o repositorio git foi criado e
-        irá aparecer uma pasta com nomeada git na pasta que vecê está ultilizando.
+        Nessa hora vai aparecer uma mensagem informando que o repositorio git foi criado e
+        irá aparecer uma pasta nomeada como git na pasta que vecê está ultilizando.
     </p>
     <aside>
         <h4>Como vê pastas ocultas no gerenciador de arquivos</h4>
@@ -44,12 +44,12 @@
     </aside>
     <h3>Preparar para commit</h3>
     <p>Para usar como exemplo vamos criar duas páginas, index.html e script.js. No terminal vamos usar o comando
-        <strong>git status</strong>. Esse comando mostrará todos os arquivos da sua aplicação, e se eles estão commitados, 
+        <strong>git status</strong>. Esse comando mostrará todos os arquivos da sua aplicação. Se eles estão commitados, 
         preparados para commitar ou não preparados para commitar. No caso como esses arquivos foram recem criados, com o comando 
-        git status mostrará que eles não estão preparados para commit, e para podermos preparalos temos algumas formas.
+        git status veremos que eles não estão preparados para commit, e para podermos preparalos temos algumas formas.
     </p>
     <p>Podemos usar um comando para preparar um de cada vez. Dessa forma: <strong>git add index.html</strong>. Se quisermos 
-    removermos arquivos preparados para commitar, podemos usar o comando <strong>git rm --cached index.html</strong>. Já se 
+    remover arquivos preparados para commitar, podemos usar o comando <strong>git rm --cached index.html</strong>. Já se 
     quisermos preparar todos os arquivos, usamos o comando <strong>git add .</strong>
     </p>
     <h3>Primeiro comit</h3>
@@ -61,33 +61,34 @@
     <p>Alguns arquivos da sua aplicação podem ter algo que você não queira dexar visivel. Senhas, Dados pessoais, entre outros motivos.
         Para não commitar alguma pasta, basta não preparar o arquivo né? Não! No dia a dia vamos trabalhar com muitos arquivos, então 
         fica inviavel preparar de um por um, o mais fácil é usar um recurso do git para colocarmos os arquivos que não queresmos commitar.
-        Pois tudo que vamos commitar iremos deixar no github, e não é uma boa prática deixar dados sensiveis assim.
+        Pois tudo que vamos commitar iremos deixar no github, e não é uma boa prática deixar dados sensiveis como publico.
     </p>
-    <p>Então a forma mais simples de resulver esse problema é criarmos um arquivo nomeado assim: <strong>.gitignore</strong>
+    <p>Então a forma mais simples de resolver esse problema é criar um arquivo nomeado assim: <strong>.gitignore</strong>
     Em seguida dentro desse arquivo escrevermos o nome dos arquivos que não vamos commitar. Dessa forma reolvemos muito simplesmente o problema.</p>
 
     <h3>Branch</h3>
-    <p>Um conceito muito importante é o de branch, note que quando você abro o terminal com o bash do git, vai aparecer um 
+    <p>Um conceito muito importante é o de branch, note que quando você abre o terminal com o bash do git, vai aparecer um 
         nome entre colchetes" (master) ". Normalmente uma aplicação tem dois ambientes, o de produção que é o ambiente que o 
-        cliente ta usando. Vamos colocar como exemplo um app, o que o cliente fica usando fica no branch master. O outro ambiente 
-        é o de desenvolvimento, que vai ficar o código que está sendo testado, um ambiente onde os desenvolvedores estão usando
-        constantimente.  O código que será trabalhado até ser enviado para aprodução.
+        cliente ta usando e o de desenvolvimento, que é onde nós vamos trabalhar. Vamos colocar como exemplo um app, o que 
+        o cliente fica usando fica no branch master. O outro ambiente é o de desenvolvimento, que vai ficar o código que 
+        está sendo testado, um ambiente onde os desenvolvedores estão usando constantimente. O código que será trabalhado 
+        até ser enviado para a produção.
     </p>
-    <p>Vamos supor que recebemos uma tarefa de adicionar uma funcionalidade de cadastro no nosso app, Não é interessante
+    <p>Vamos supor que recebemos uma tarefa de adicionar uma funcionalidade de cadastro no nosso app, não é interessante
         mandar para o ambiente de produção(do cliente) funcionalidades que não sabemos se tem algum erro ou coisa do tipo.
         Então temos que ter outro ambiente para trabalharmos o código até termos certeza que a funcionalidade nova não irá 
         quebrar a aplicação.
     </p>
     <h3>Criando uma branch development</h3>
-    <p>Muuito simples, para criar uma branch development é só escrever o comando <strong>git branch development</strong>. 
+    <p>Muito simples, para criar uma branch development é só escrever o comando <strong>git branch development</strong>. 
         Você não notará nada de diferente, mas se usar o comando <strong>git branch</strong> o terminal mostrará todas as
         branchs existentes e qual que está em uso.
     </p>
-    <p>Pensem em branch como se fossem pequenas pastas dentro do nosso repositorio. Para podermos mudar de branch usamos o 
+    <p>Pensem em branch como se fossem pequenas pastas dentro do nosso repositório. Para podermos mudar de branch usamos o 
         comando <strong>git checkout development</strong>. Nesse caso foi o development, mas depende para qual ambiente você
         quer ir. Se quiser voltar para o master é só colocar o mesmo comando com o nome master <strong>git checkout master</strong>
     </p>
-    <p>Vamos usar como se fosse um cadastro de cliente. No terminal vamos criar essa branck com o comando <strong>git branch cadastro-cliente</strong>
+    <p>Vamos usar como se fosse um cadastro de cliente. No terminal vamos criar essa branch com o comando <strong>git branch cadastro-cliente</strong>
         Em seguida vamos vê os ambientes que temos com o comando <strong>git branch</strong>, então vamos entrar nesse ambiente com o comando
         <strong>git checkout cadastro-cliente</strong>. No exemplo vamos criar uma pasta cadastro-cliente e dentro dessa pasta um arquivo com
         mesmo nome.
@@ -96,12 +97,12 @@
         vamos commitar. Os comandos são <strong>git add .</strong> para preparar todo que tiver que preparar e 
         <strong>git commit -m "cadastro de cliente adicionado"</strong>
     </p>
-    <p>Pronto, agora para você como funciona essa mudança de ambientes na prática, vamos mudar de branch mais uma vez com o comando
+    <p>Pronto, agora que você viu como funciona essa mudança de ambientes na prática, vamos mudar de branch mais uma vez com o comando
         <strong>git checkout development</strong>. Se olhar nos seus arquivos agora, vai notar que a pasta não está mais lá. Agora 
-        vamos supor que terminamos a funcionalidade de cadastro de clientes e queremos colocar no brnach do development. É simples
+        vamos supor que terminamos a funcionalidade de cadastro de clientes e queremos colocar na branch do development. É simples
         vamos entrar no ambiente que irá receber o outro, nesse caso o <strong>git checkout development</strong> e usar o comando 
         <strong>git merge cadastro-cliente</strong>. Pronto! Já está integrado com a branch development. Agora vamos supor que ta tudo
-        tudo testado e queremos mandar para o cliente. Vamos entrar no <strong>git checkout master</strong> e aqui vamos usar o comando
+        testado e queremos mandar para o cliente. Vamos entrar no <strong>git checkout master</strong> e aqui vamos usar o comando
         <strong>git merge development</strong>
     </p>
 
